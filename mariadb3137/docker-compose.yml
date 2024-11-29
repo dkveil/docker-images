@@ -8,10 +8,10 @@ services:
     ports:
       - '3137:3306'
     environment:
-      MARIDADB_ROOT_PASSWORD: passwd
-      MARIDADB_USER: user
-      MARIDADB_PASSWORD: passwd
-      MARIDADB_DATABASE: db
+      MARIADB_ROOT_PASSWORD: passwd
+      MARIADB_USER: user
+      MARIADB_PASSWORD: passwd
+      MARIADB_DATABASE: db
     volumes:
       - mysql-data:/var/lib/mysql
 
